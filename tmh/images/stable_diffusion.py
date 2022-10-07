@@ -37,7 +37,6 @@ def generate_with_image(prompt="A fantasy landscape, trending on artstation", fi
     return file_name
 
 def save_image(image, filename):
-    from PIL import Image
     img = Image.open(image)
     img = img.save(filename)
 
