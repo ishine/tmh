@@ -62,6 +62,9 @@ pip install torch torchvision torchaudio --extra-index-url https://download.pyto
 ### Generate image
 <img src="jesus2.png" alt="Cyberpunk jesus at a rock concert" style="height: 300px; width:300px;"/>
 
+<i>Cyberpunk jesus at a rock concert</i>
+
+
 Run the following code to generate an image. The image will be stored in the current directory.
 The first input is the prompt to generate from, the second is the filename to save to.
 ``` python
