@@ -13,7 +13,7 @@ class phonemap:
         if mapfile:
             self.mapfile = mapfile
         else:
-            self.mapfile = os.path.join(dir,'phonemap.tsv')
+            self.mapfile = os.path.join(dir,'phonemap_lexikon.py')
         with open(self.mapfile) as csvf:
             dictreader = csv.DictReader(csvf,delimiter='\t')
             if not frombet in dictreader.fieldnames:
