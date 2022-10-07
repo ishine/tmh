@@ -49,6 +49,25 @@ print(asr_transcription)
 print("the transcription is", transcription)
 ```
 
+## Image generation
+To use imager generation you need a computer with nvidia-gpu
+You also need to install torch with cuda
+
+### Install
+```
+pip uninstall torch
+pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+```
+
+### Generate image
+<img src="jesus2.png" alt="Cyberpunk jesus at a rock concert" style="height: 100px; width:100px;"/>
+Run the following code to generate an image. The image will be stored in the current directory.
+The first input is the prompt to generate from, the second is the filename to save to.
+``` python
+from tmh.images.stable_diffusion import generate_image
+generate_image("Hilma Af Klint Queen of Time", "hilma.png")
+```
+
 ### Transcription with speech rate
 ``` python
 from tmh.transcribe import transcribe_from_audio_path
