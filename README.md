@@ -69,7 +69,7 @@ Run the following code to generate an image. The image will be stored in the cur
 The first input is the prompt to generate from, the second is the filename to save to.
 ``` python
 from tmh.images.stable_diffusion import generate_image
-generate_image("Hilma Af Klint Queen of Time", "hilma.png")
+generate_image("Cyberpunk jesus at a rock concert", "jesus.png")
 ```
 
 ### Transcription with speech rate
