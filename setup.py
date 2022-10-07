@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.104'
+VERSION = '0.0.105'
 DESCRIPTION = 'TMH Speech package'
 LONG_DESCRIPTION = 'A package for TMH Speech'
 
@@ -22,6 +22,7 @@ setup(
     long_description=long_description,
     packages=find_packages(),
     include_package_data=True,
+    package_data={'': ['beskow/*.tsv']},
     install_requires=['transformers', 'torch', 'torchaudio', 'speechbrain',
                       'librosa', 'noisereduce', 'numpy', 'scipy', 'unidecode', 'inflect', 'librosa', 'python-dotenv', 'deep-phonemizer', 'argparse', 'pydub', 'pyctcdecode'],
     keywords=['python', 'speech', 'voice', 'nlp'],
